@@ -1,93 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Watson Power Washing</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f4f4;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Watson Power Washing</title>
 
-        header {
-            background: #0077cc;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
 
-        .button {
-            background: white;
-            color: #0077cc;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
+body{
+background:#f5f7fa;
+color:#333;
+}
 
-        section {
-            padding: 40px;
-            text-align: center;
-        }
+header{
+background:linear-gradient(135deg,#0077cc,#00a2ff);
+color:white;
+text-align:center;
+padding:100px 20px;
+}
 
-        .services {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+header h1{
+font-size:3rem;
+margin-bottom:15px;
+}
 
-        .service {
-            background: white;
-            padding: 20px;
-            width: 250px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,.1);
-        }
+header p{
+font-size:1.2rem;
+margin-bottom:30px;
+}
 
-        footer {
-            background: #222;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+.btn{
+display:inline-block;
+background:white;
+color:#0077cc;
+padding:15px 30px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:70px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:2rem;
+margin-bottom:40px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.card h3{
+margin-bottom:10px;
+color:#0077cc;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+.review{
+background:white;
+padding:25px;
+margin:15px auto;
+max-width:700px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.contact{
+text-align:center;
+background:#0077cc;
+color:white;
+}
+
+.contact a{
+color:white;
+font-weight:bold;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>Watson Power Washing</h1>
-    <p>Making Your Property Look Brand New</p>
-    <a class="button" href="mailto:youremail@example.com">Get a Free Quote</a>
+<h1>Watson Power Washing</h1>
+<p>Professional Pressure Washing in Brandon, Mississippi</p>
+<a class="btn" href="Watsonethan913@gmail.com">Get A Free Quote</a>
 </header>
 
 <section>
-    <h2>Our Services</h2>
-    <div class="services">
-        <div class="service">
-            <h3>Driveways</h3>
-            <p>Remove dirt, stains, and grime.</p>
-        </div>
+<h2 class="section-title">Our Services</h2>
 
-        <div class="service">
-            <h3>Sidewalks</h3>
-            <p>Restore clean concrete surfaces.</p>
-        </div>
+<div class="services">
 
-        <div class="service">
-            <h3>Patios</h3>
-            <p>Bring outdoor spaces back to life.</p>
-        </div>
-    </div>
+<div class="card">
+<h3>Driveway Cleaning</h3>
+<p>Remove dirt, mold, stains, and years of buildup.</p>
+</div>
+
+<div class="card">
+<h3>Sidewalk Cleaning</h3>
+<p>Restore concrete to a bright, clean finish.</p>
+</div>
+
+<div class="card">
+<h3>Patio Washing</h3>
+<p>Make your outdoor spaces look brand new.</p>
+</div>
+
+<div class="card">
+<h3>House Washing</h3>
+<p>Safely clean siding and exterior surfaces.</p>
+</div>
+
+</div>
 </section>
 
 <section>
-    <h2>Serving Brandon, Mississippi</h2>
-    <p>Affordable and reliable pressure washing services.</p>
+<h2 class="section-title">Before & After Gallery</h2>
+
+<div class="gallery">
+<img src="https://via.placeholder.com/600x400?text=Before+Photo" alt="">
+<img src="https://via.placeholder.com/600x400?text=After+Photo" alt="">
+</div>
+
+</section>
+
+<section>
+<h2 class="section-title">Customer Reviews</h2>
+
+<div class="review">
+★★★★★
+<br><br>
+"Excellent work and great pricing. My driveway looks brand new!"
+</div>
+
+<div class="review">
+★★★★★
+<br><br>
+"Professional, on time, and did an amazing job."
+</div>
+
+</section>
+
+<section class="contact">
+<h2>Get Your Free Estimate</h2>
+<br>
+<p>Serving Brandon and surrounding areas.</p>
+<br>
+<p>Email: Watsonethan913@gmail.com</p>
+<p>Phone: 601-832-9795</p>
 </section>
 
 <footer>
-    <p>Watson Power Washing © 2026</p>
+Watson Power Washing © 2026
 </footer>
 
 </body>
