@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,12 +11,13 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 }
 
 body{
-background:#f5f7fa;
+background:#f4f7fb;
 color:#333;
+line-height:1.6;
 }
 
 header{
@@ -43,6 +45,7 @@ padding:15px 30px;
 border-radius:8px;
 text-decoration:none;
 font-weight:bold;
+margin:5px;
 }
 
 section{
@@ -55,7 +58,9 @@ font-size:2rem;
 margin-bottom:40px;
 }
 
-.services{
+.services,
+.pricing,
+.reasons{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
@@ -70,8 +75,8 @@ text-align:center;
 }
 
 .card h3{
-margin-bottom:10px;
 color:#0077cc;
+margin-bottom:10px;
 }
 
 .gallery{
@@ -82,34 +87,38 @@ gap:20px;
 
 .gallery img{
 width:100%;
-border-radius:10px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
 .review{
 background:white;
 padding:25px;
-margin:15px auto;
-max-width:700px;
-border-radius:10px;
+border-radius:12px;
 box-shadow:0 5px 15px rgba(0,0,0,.1);
+margin-bottom:20px;
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
 }
 
 .contact{
-text-align:center;
 background:#0077cc;
 color:white;
+text-align:center;
 }
 
 .contact a{
 color:white;
 font-weight:bold;
+text-decoration:none;
 }
 
 footer{
 background:#111;
 color:white;
 text-align:center;
-padding:20px;
+padding:25px;
 }
 </style>
 </head>
@@ -118,8 +127,20 @@ padding:20px;
 
 <header>
 <h1>Watson Power Washing</h1>
-<p>Professional Pressure Washing in Brandon, Mississippi</p>
-<a class="btn" href="Watsonethan913@gmail.com">Get A Free Quote</a>
+
+<p>
+Professional Pressure Washing for Driveways,
+Sidewalks, Patios & More
+</p>
+
+<a class="btn" href="tel:601-832-9795">
+Call For A Free Quote
+</a>
+
+<a class="btn" href="sms:601-832-9795">
+Text For A Free Quote
+</a>
+
 </header>
 
 <section>
@@ -129,35 +150,94 @@ padding:20px;
 
 <div class="card">
 <h3>Driveway Cleaning</h3>
-<p>Remove dirt, mold, stains, and years of buildup.</p>
+<p>Remove dirt, oil stains, mold, and years of buildup.</p>
 </div>
 
 <div class="card">
 <h3>Sidewalk Cleaning</h3>
-<p>Restore concrete to a bright, clean finish.</p>
+<p>Restore bright, clean concrete surfaces.</p>
 </div>
 
 <div class="card">
 <h3>Patio Washing</h3>
-<p>Make your outdoor spaces look brand new.</p>
+<p>Make outdoor living spaces look brand new.</p>
 </div>
 
 <div class="card">
 <h3>House Washing</h3>
-<p>Safely clean siding and exterior surfaces.</p>
+<p>Safely clean exterior siding and surfaces.</p>
 </div>
 
 </div>
 </section>
 
 <section>
-<h2 class="section-title">Before & After Gallery</h2>
+<h2 class="section-title">Starting Prices</h2>
 
-<div class="gallery">
-<img src="https://via.placeholder.com/600x400?text=Before+Photo" alt="">
-<img src="https://via.placeholder.com/600x400?text=After+Photo" alt="">
+<div class="pricing">
+
+<div class="card">
+<h3>Driveways</h3>
+<p>Starting at $50</p>
 </div>
 
+<div class="card">
+<h3>Sidewalks</h3>
+<p>Starting at $25</p>
+</div>
+
+<div class="card">
+<h3>Patios</h3>
+<p>Starting at $40</p>
+</div>
+
+<div class="card">
+<h3>House Washing</h3>
+<p>Free Quote</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Before & After Results</h2>
+
+<div class="gallery">
+
+<img src="https://via.placeholder.com/600x400?text=Before+Photo">
+
+<img src="https://via.placeholder.com/600x400?text=After+Photo">
+
+</div>
+
+<p style="text-align:center;margin-top:20px;">
+
+</p>
+
+</section>
+
+<section>
+<h2 class="section-title">Why Choose Watson Power Washing?</h2>
+
+<div class="reasons">
+
+<div class="card">
+<h3>Affordable Pricing</h3>
+</div>
+
+<div class="card">
+<h3>Free Estimates</h3>
+</div>
+
+<div class="card">
+<h3>Local Brandon Business</h3>
+</div>
+
+<div class="card">
+<h3>Reliable Service</h3>
+</div>
+
+</div>
 </section>
 
 <section>
@@ -166,24 +246,45 @@ padding:20px;
 <div class="review">
 ★★★★★
 <br><br>
-"Excellent work and great pricing. My driveway looks brand new!"
+"My driveway looks brand new. Great work!"
 </div>
 
 <div class="review">
 ★★★★★
 <br><br>
-"Professional, on time, and did an amazing job."
+"Very professional and affordable."
 </div>
 
 </section>
 
+<section>
+<h2 class="section-title">Service Area</h2>
+
+<p style="text-align:center;font-size:1.1rem;">
+Serving Brandon, Flowood, Pearl,
+Richland and surrounding Mississippi areas.
+</p>
+</section>
+
 <section class="contact">
-<h2>Get Your Free Estimate</h2>
+
+<h2>Get Your Free Estimate Today</h2>
+
 <br>
-<p>Serving Brandon and surrounding areas.</p>
+
+<p>
+Phone:
+<a href="tel:601-832-9795">
+I always text back, so dont hesitate to text if you have a question.
+</a>
+</p>
+
 <br>
-<p>Email: Watsonethan913@gmail.com</p>
-<p>Phone: 601-832-9795</p>
+
+<p>
+Text us anytime for a free quote.
+</p>
+
 </section>
 
 <footer>
@@ -192,3 +293,5 @@ Watson Power Washing © 2026
 
 </body>
 </html>
+```
+
